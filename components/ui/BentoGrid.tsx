@@ -6,8 +6,10 @@ import { cn } from "@/utils/cn";
 import { BackgroundGradientAnimation } from "./GradientBg";
 import GridGlobe from "./GridGlobe";
 import { useState } from "react";
+import { IoCopyOutline } from "react-icons/io5";
 import animationData from '@/data/confetti.json';
 import Lottie from "react-lottie";
+import MagicButton from "../MagicButton";
 
 export const BentoGrid = ({
     className,
@@ -49,8 +51,8 @@ export const BentoGridItem = ({
     titleClassName?: string;
     spareImg?: string;
 }) => {
-    const leftLists = ["ReactJS", "Express", "Typescript"];
-    const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
+    const leftLists = ["JavaScript", "C#","MySQL","Java"];
+    const rightLists = ["Unity", "Blender", "HTML", "CSS"];
 
     const [copied, setCopied] = useState(false);
 
@@ -64,7 +66,7 @@ export const BentoGridItem = ({
     };
 
     const handleCopy = () => {
-        const text = "hsu@jsmastery.pro";
+        const text = "amina.buturovic@gmail.com";
         navigator.clipboard.writeText(text);
         setCopied(true);
     };
@@ -174,13 +176,13 @@ export const BentoGridItem = ({
                                 <Lottie options={defaultOptions} height={200} width={400} />
                             </div>
 
-                            {/* <MagicButton
-                title={copied ? "Email is Copied!" : "Copy my email address"}
-                icon={<IoCopyOutline />}
-                position="left"
-                handleClick={handleCopy}
-                otherClasses="!bg-[#161A31]"
-              /> */}
+                            <MagicButton
+                                title={copied ? "Email is Copied!" : "Copy my email address"}
+                                icon={<IoCopyOutline />}
+                                position="left"
+                                handleClick={handleCopy}
+                                otherClasses="!bg-[#161A31]"
+                            />
                         </div>
                     )}
                 </div>
