@@ -5,7 +5,7 @@ import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
-// No need to import the image with import statement, use the path directly
+
 const Hero = () => {
   return (
     <div className="pb-20 pt-36">
@@ -37,8 +37,8 @@ const Hero = () => {
           <Image
             src="/ButurovicAmina_slika.jpg"
             alt="Profile Photo"
-            width={200}  // Set width and height as needed
-            height={200}
+            width={250}  // Set width and height as needed
+            height={250}
             className="rounded-full mb-8"
           />
 

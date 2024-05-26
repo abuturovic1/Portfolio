@@ -134,14 +134,15 @@ export const workExperience = [
   {
     id: 1,
     title: "Druga gimnazija Sarajevo",
-    desc: "",
+    desc: "2015-2019",
     className: "md:col-span-2",
     thumbnail: "/exp3.svg",
   },
   {
     id: 2,
     title: "Faculty Of Electrical Engineering, University of Sarajevo",
-    desc: "Department for Computer Science and Informatics",
+    desc: "2019-2024",
+    desc2: "Department for Computer Science and Informatics",
     className: "md:col-span-2", 
     thumbnail: "/exp2.svg",
   }
